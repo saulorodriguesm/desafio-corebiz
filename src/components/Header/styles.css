@@ -1,0 +1,132 @@
+.headerContainer {
+  display: none;
+}
+
+.headerContainer,
+.headerContainerMobile {
+  font-family: "Nunito", sans-serif;
+}
+
+.headerContainerMobile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.headerContainerMobile .headerWrappper {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 7px 20px;
+}
+
+.headerContainerMobile .menuIcon {
+  width: 10%;
+}
+
+.headerContainerMobile .headerIcon {
+  width: 80%;
+}
+
+.headerContainerMobile .headerIcon svg {
+  height: 25px;
+  width: 102px;
+}
+
+.headerContainerMobile .headerMinicart {
+  width: 10%;
+}
+
+.headerMinicart {
+  position: relative;
+}
+
+.headerMinicart span {
+  background: #f8475f;
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 10px;
+  height: 14px;
+  line-height: 14px;
+  position: absolute;
+  right: -16px;
+  top: -5px;
+  width: 14px;
+}
+
+.headerSearch {
+  position: relative;
+  width: 100%;
+}
+
+.headerSearch svg {
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+.headerSearch input {
+  border: none;
+  border-bottom: 1px solid #7a7a7a;
+  color: #7a7a7a;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .headerContainerMobile {
+    display: none;
+  }
+
+  .headerContainer {
+    display: flex;
+    height: 80px;
+  }
+
+  .headerIcon {
+    height: 41px;
+    width: 170px;
+  }
+
+  .headerSearch svg {
+    top: 14px;
+  }
+
+  .headerMinicart {
+    margin-top: 8px;
+  }
+
+  .headerContainer .headerWrappper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1248px;
+    width: 100%;
+  }
+
+  .headerContainer .headerWrappper .headerSearch {
+    max-width: 718px;
+    width: 100%;
+  }
+
+  .headerContainer .headerWrappper .headerAccount svg {
+    margin-right: 6px;
+  }
+
+  .headerContainer .headerWrappper .headerAccount a {
+    align-items: center;
+    color: #7a7a7a;
+    display: flex;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+}

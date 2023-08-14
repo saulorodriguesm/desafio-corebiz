@@ -1,0 +1,12 @@
+.carouselDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .carouselMobile {
+    display: none;
+  }
+  .carouselDesktop {
+    display: block;
+  }
+}
